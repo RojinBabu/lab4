@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <br><br>
+    
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" placeholder="Enter second number">
+    <br><br>
+
+    <label for="operator">Select operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br><br>
+
+    <button onclick="performCalculation()">Calculate</button>
+    
+    <h2>Result: <span id="result"></span></h2>
+</body>
+</html>
